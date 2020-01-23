@@ -1,5 +1,5 @@
 <template>
-  <v-app class="app">
+  <v-app class="app" :style="{ backgroundImage: 'url(' + require('@/assets/forest.jpg') + ')' }">
     <div class="menu">
       <v-btn text >Home</v-btn>
     </div>
@@ -36,7 +36,7 @@ export default Vue.extend({
 
 <style lang="scss">
   .app.v-application {
-    background-image: url("/forest.jpg") !important;
+    background-image: url("/assets/forest.jpg") !important;
   }
   .menu {
     display: flex;
